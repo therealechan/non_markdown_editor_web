@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# {M} Markdown Now
+
+Landing page for [Markdown Now](https://md.nowornever.work) — a fast, native macOS markdown editor built with Rust and GPUI.
+
+## Tech Stack
+
+- Next.js (App Router) + TypeScript
+- Tailwind CSS v4
+- `motion` for scroll animations
+- `next-themes` for dark/light toggle
+- `shadcn/ui` + `lucide-animated` icons
+- Geist Sans & Mono fonts
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── layout.tsx        # Geist fonts, ThemeProvider, SEO metadata
+│   ├── page.tsx          # Page sections + JSON-LD structured data
+│   ├── globals.css       # Liquidator design system variables
+│   ├── robots.ts         # Crawler rules
+│   └── sitemap.ts        # Sitemap for md.nowornever.work
+├── components/
+│   ├── nav.tsx           # Sticky nav with logo + theme toggle + GitHub
+│   ├── hero.tsx          # Title, tagline, badge, CTA buttons
+│   ├── app-preview.tsx   # CSS-built editor mockup (split pane)
+│   ├── features.tsx      # 6 feature cards in 3-col grid
+│   ├── open-source.tsx   # MIT license + GitHub CTA
+│   ├── footer.tsx        # Logo, copyright, links
+│   ├── logo.tsx          # {M} logo mark
+│   ├── theme-provider.tsx
+│   ├── theme-toggle.tsx
+│   └── ui/               # lucide-animated icon components
+└── lib/
+    └── utils.ts
+```
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
