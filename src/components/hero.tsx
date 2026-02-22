@@ -41,7 +41,7 @@ export function Hero() {
       </motion.h1>
 
       <motion.p
-        className="mt-4 max-w-[520px] text-[15px] leading-relaxed text-fg-muted"
+        className="mt-4 max-w-[640px] text-[15px] leading-relaxed text-fg-muted"
         custom={2}
         initial="hidden"
         animate="visible"
