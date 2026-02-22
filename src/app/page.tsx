@@ -22,7 +22,7 @@ const jsonLd = {
     url: "https://0xechan.xyz",
   },
   downloadUrl:
-    "https://github.com/therealechan/non_markdown_editor_web/releases",
+    "https://github.com/therealechan/nowornever_markdown_editor/releases",
   softwareVersion: "0.1.0",
   programmingLanguage: "Rust",
 };

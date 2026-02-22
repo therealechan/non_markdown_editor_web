@@ -17,12 +17,12 @@ const features = [
   {
     icon: SparklesIcon,
     title: "Syntax Highlighting",
-    desc: "Beautiful code block styling with language-aware highlighting.",
+    desc: "Code blocks rendered in monospace with distinct styling.",
   },
   {
     icon: SunMoonIcon,
     title: "Dark & Light Mode",
-    desc: "Toggle with Cmd+Shift+D. Follows your system or set manually.",
+    desc: "Toggle with Cmd+Shift+D. Dark by default, switch anytime.",
   },
   {
     icon: MonitorCheckIcon,

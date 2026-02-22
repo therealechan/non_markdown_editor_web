@@ -21,7 +21,7 @@ export function Nav() {
         <div className="flex items-center gap-1">
           <ThemeToggle />
           <a
-            href="https://github.com/therealechan/non_markdown_editor_web"
+            href="https://github.com/therealechan/nowornever_markdown_editor"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-8 h-8 rounded-md

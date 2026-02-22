@@ -59,7 +59,7 @@ export function Hero() {
         variants={fadeSlideIn}
       >
         <a
-          href="https://github.com/therealechan/non_markdown_editor_web/releases"
+          href="https://github.com/therealechan/nowornever_markdown_editor/releases"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-[6px]
@@ -71,7 +71,7 @@ export function Hero() {
           Download for macOS
         </a>
         <a
-          href="https://github.com/therealechan/non_markdown_editor_web"
+          href="https://github.com/therealechan/nowornever_markdown_editor"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-[6px]

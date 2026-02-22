@@ -31,7 +31,7 @@ export function Footer() {
             MIT License
           </a>
           <a
-            href="https://github.com/therealechan/non_markdown_editor_web"
+            href="https://github.com/therealechan/nowornever_markdown_editor"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-fg transition-colors"
