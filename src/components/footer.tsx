@@ -11,7 +11,17 @@ export function Footer() {
         </div>
 
         <div className="flex items-center gap-4">
-          <span>&copy; 2026 therealechan</span>
+          <span>
+            &copy; 2026{" "}
+            <a
+              href="https://0xechan.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-fg transition-colors"
+            >
+              echanxyz
+            </a>
+          </span>
           <a
             href="https://opensource.org/licenses/MIT"
             target="_blank"
