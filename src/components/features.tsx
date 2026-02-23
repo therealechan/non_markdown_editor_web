@@ -7,6 +7,9 @@ import { SunMoonIcon } from "@/components/ui/sun-moon";
 import { MonitorCheckIcon } from "@/components/ui/monitor-check";
 import { CopyIcon } from "@/components/ui/copy";
 import { KeyboardIcon } from "@/components/ui/keyboard";
+import { FolderOpenIcon } from "@/components/ui/folder-open";
+import { MousePointerClickIcon } from "@/components/ui/mouse-pointer-click";
+import { ShieldCheckIcon } from "@/components/ui/shield-check";
 
 const features = [
   {
@@ -38,6 +41,21 @@ const features = [
     icon: KeyboardIcon,
     title: "Keyboard Shortcuts",
     desc: "Native macOS key bindings for a seamless editing flow.",
+  },
+  {
+    icon: FolderOpenIcon,
+    title: "File Management",
+    desc: "Open, save, and Save As with Cmd+O, Cmd+S, and Cmd+Shift+S.",
+  },
+  {
+    icon: MousePointerClickIcon,
+    title: "Drag & Drop",
+    desc: "Drop .md files from Finder directly into the editor.",
+  },
+  {
+    icon: ShieldCheckIcon,
+    title: "Unsaved Changes Protection",
+    desc: "Native save dialog prompts before you lose any work.",
   },
 ];
 

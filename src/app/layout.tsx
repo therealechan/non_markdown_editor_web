@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 const siteUrl = "https://md.nowornever.work";
 const title = "Markdown Now — Native macOS Markdown Editor";
 const description =
-  "A fast, GPU-accelerated macOS markdown editor with live side-by-side preview, syntax highlighting, and rich text copy. Built with Rust and GPUI. Free and open source.";
+  "A fast, GPU-accelerated macOS markdown editor with live side-by-side preview, syntax highlighting, and rich text copy. Built with Rust and GPUI.";
 
 export const metadata: Metadata = {
   title,
@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     "GPUI",
     "live preview markdown",
     "GPU accelerated editor",
-    "open source markdown editor",
     "markdown now",
   ],
   authors: [{ name: "therealechan", url: "https://0xechan.xyz" }],

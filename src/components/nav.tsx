@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { Logo } from "./logo";
 import { ThemeToggle } from "./theme-toggle";
-import { GithubIcon } from "@/components/ui/github";
-
 export function Nav() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-surface-border
@@ -20,16 +18,6 @@ export function Nav() {
 
         <div className="flex items-center gap-1">
           <ThemeToggle />
-          <a
-            href="https://github.com/therealechan/nowornever_markdown_editor"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-8 h-8 rounded-md
-                       text-fg-muted hover:text-fg transition-colors"
-            aria-label="GitHub"
-          >
-            <GithubIcon size={18} />
-          </a>
         </div>
       </div>
     </nav>

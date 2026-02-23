@@ -2,7 +2,7 @@ import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
 import { AppPreview } from "@/components/app-preview";
 import { Features } from "@/components/features";
-import { OpenSource } from "@/components/open-source";
+import { Pricing } from "@/components/pricing";
 import { Footer } from "@/components/footer";
 
 const jsonLd = {
@@ -14,16 +14,17 @@ const jsonLd = {
     "A fast, GPU-accelerated macOS markdown editor with live side-by-side preview, syntax highlighting, and rich text copy. Built with Rust and GPUI.",
   applicationCategory: "DeveloperApplication",
   operatingSystem: "macOS",
-  license: "https://opensource.org/licenses/MIT",
-  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  offers: [
+    { "@type": "Offer", name: "Free Trial", price: "0", priceCurrency: "USD" },
+    { "@type": "Offer", name: "Lifetime", price: "9.99", priceCurrency: "USD" },
+  ],
   author: {
     "@type": "Person",
     name: "therealechan",
     url: "https://0xechan.xyz",
   },
-  downloadUrl:
-    "https://github.com/therealechan/nowornever_markdown_editor/releases",
-  softwareVersion: "0.1.0",
+  downloadUrl: "/download/Markdown-Now.dmg",
+  softwareVersion: "2.0",
   programmingLanguage: "Rust",
 };
 
@@ -36,15 +37,15 @@ const faqLd = {
       name: "What is Markdown Now?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Markdown Now is a free, open-source, native macOS markdown editor built with Rust and GPUI. It features GPU-accelerated rendering, live side-by-side preview, syntax highlighting, and rich text copy.",
+        text: "Markdown Now is a native macOS markdown editor built with Rust and GPUI. It features GPU-accelerated rendering, live side-by-side preview, syntax highlighting, and rich text copy.",
       },
     },
     {
       "@type": "Question",
-      name: "Is Markdown Now free?",
+      name: "How much does Markdown Now cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Markdown Now is completely free and open source under the MIT license.",
+        text: "Markdown Now offers a free trial with full functionality. When you're ready, a one-time $9.99 lifetime purchase unlocks the app forever, including all future updates.",
       },
     },
     {
@@ -74,7 +75,7 @@ export default function Home() {
         <Hero />
         <AppPreview />
         <Features />
-        <OpenSource />
+        <Pricing />
       </main>
       <Footer />
     </div>

@@ -59,9 +59,7 @@ export function Hero() {
         variants={fadeSlideIn}
       >
         <a
-          href="https://github.com/therealechan/nowornever_markdown_editor/releases"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/download/Markdown-Now.dmg"
           className="inline-flex items-center gap-2 rounded-[6px]
                      bg-accent-bg text-accent-fg px-5 py-2.5 text-[14px]
                      font-medium transition-transform
@@ -69,17 +67,6 @@ export function Hero() {
         >
           <DownloadIcon size={16} />
           Download for macOS
-        </a>
-        <a
-          href="https://github.com/therealechan/nowornever_markdown_editor"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-[6px]
-                     border border-surface-border bg-surface px-5 py-2.5
-                     text-[14px] font-medium text-fg transition-transform
-                     hover:-translate-y-[1px] active:scale-[0.98]"
-        >
-          View Source
         </a>
       </motion.div>
     </section>

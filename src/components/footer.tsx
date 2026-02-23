@@ -10,35 +10,17 @@ export function Footer() {
           <span>Markdown Now</span>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center sm:justify-end gap-4">
-          <span>
-            &copy; 2026{" "}
-            <a
-              href="https://0xechan.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-fg transition-colors"
-            >
-              echanxyz
-            </a>
-          </span>
+        <span>
+          &copy; 2026{" "}
           <a
-            href="https://opensource.org/licenses/MIT"
+            href="https://0xechan.xyz"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-fg transition-colors"
           >
-            MIT License
+            echanxyz
           </a>
-          <a
-            href="https://github.com/therealechan/nowornever_markdown_editor"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-fg transition-colors"
-          >
-            GitHub
-          </a>
-        </div>
+        </span>
       </div>
     </footer>
   );

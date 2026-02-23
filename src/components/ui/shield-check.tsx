@@ -6,23 +6,22 @@ import { forwardRef, useCallback, useImperativeHandle, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 
-export interface HeartIconHandle {
+export interface ShieldCheckIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
 
-interface HeartIconProps extends HTMLAttributes<HTMLDivElement> {
+interface ShieldCheckIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const HeartIcon = forwardRef<HeartIconHandle, HeartIconProps>(
+const ShieldCheckIcon = forwardRef<ShieldCheckIconHandle, ShieldCheckIconProps>(
   ({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
 
     useImperativeHandle(ref, () => {
       isControlledRef.current = true;
-
       return {
         startAnimation: () => controls.start("animate"),
         stopAnimation: () => controls.start("normal"),
@@ -58,33 +57,41 @@ const HeartIcon = forwardRef<HeartIconHandle, HeartIconProps>(
         onMouseLeave={handleMouseLeave}
         {...props}
       >
-        <motion.svg
-          animate={controls}
+        <svg
           fill="none"
           height={size}
           stroke="currentColor"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
-          transition={{
-            duration: 0.45,
-            repeat: 2,
-          }}
-          variants={{
-            normal: { scale: 1 },
-            animate: { scale: [1, 1.08, 1] },
-          }}
           viewBox="0 0 24 24"
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-        </motion.svg>
+          <motion.path
+            animate={controls}
+            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            variants={{
+              normal: { scale: 1, opacity: 1 },
+              animate: { scale: [1, 1.05, 1], opacity: [1, 0.8, 1] },
+            }}
+          />
+          <motion.path
+            animate={controls}
+            d="m9 12 2 2 4-4"
+            transition={{ duration: 0.4, ease: "easeInOut", delay: 0.1 }}
+            variants={{
+              normal: { pathLength: 1, opacity: 1 },
+              animate: { pathLength: [0, 1], opacity: [0.5, 1] },
+            }}
+          />
+        </svg>
       </div>
     );
   }
 );
 
-HeartIcon.displayName = "HeartIcon";
+ShieldCheckIcon.displayName = "ShieldCheckIcon";
 
-export { HeartIcon };
+export { ShieldCheckIcon };
