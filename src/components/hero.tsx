@@ -15,7 +15,7 @@ const fadeSlideIn = {
 
 export function Hero() {
   return (
-    <section className="mx-auto max-w-[1080px] px-6 pt-24 pb-16
+    <section className="mx-auto max-w-[1080px] px-6 pt-16 sm:pt-24 pb-16
                         flex flex-col items-center text-center">
       <motion.div
         className="mb-6 inline-flex items-center gap-2 rounded-full
@@ -31,7 +31,7 @@ export function Hero() {
       </motion.div>
 
       <motion.h1
-        className="text-[36px] font-semibold tracking-[-0.03em] text-fg"
+        className="text-[28px] sm:text-[36px] font-semibold tracking-[-0.03em] text-fg"
         custom={1}
         initial="hidden"
         animate="visible"

@@ -27,16 +27,16 @@ export function AppPreview() {
         </div>
 
         {/* Split pane */}
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[340px]">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Editor pane */}
           <div className="border-b md:border-b-0 md:border-r
-                          border-surface-border p-5 font-mono text-[13px]
+                          border-surface-border p-4 md:p-5 font-mono text-[13px]
                           leading-[1.7] text-fg-muted">
             <EditorContent />
           </div>
 
           {/* Preview pane */}
-          <div className="p-5 text-[14px] leading-[1.7] text-fg">
+          <div className="p-4 md:p-5 text-[14px] leading-[1.7] text-fg">
             <PreviewContent />
           </div>
         </div>
