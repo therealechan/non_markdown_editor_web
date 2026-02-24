@@ -1,7 +1,6 @@
 import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
 import { AppPreview } from "@/components/app-preview";
-import { Features } from "@/components/features";
 import { Pricing } from "@/components/pricing";
 import { Footer } from "@/components/footer";
 
@@ -74,7 +73,6 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <AppPreview />
-        <Features />
         {/* <Pricing /> */}
       </main>
       <Footer />
