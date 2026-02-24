@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = "https://md.nowornever.work";
-const title = "Markdown Now — Native macOS Markdown Editor";
+const title = "Markdown Now — Fast, Lightweight Native macOS Markdown Editor";
 const description =
-  "A fast, lightweight macOS markdown editor with live side-by-side preview, syntax highlighting, and rich text copy. Built with Rust and GPUI — just a 6 MB download.";
+  "A fast, lightweight native macOS markdown editor with vim mode, live side-by-side preview, syntax highlighting, and rich text copy. Built with Rust and GPUI — just a 6 MB download.";
 
 export const metadata: Metadata = {
   title,
@@ -26,12 +26,18 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   keywords: [
     "markdown editor",
+    "markdown editor mac",
     "macOS markdown editor",
     "native markdown editor",
     "rust markdown editor",
+    "lightweight markdown editor",
+    "fast markdown editor",
+    "vim markdown editor",
+    "vim mode markdown",
+    "markdown editor vim keybindings",
     "GPUI",
-    "live preview markdown",
     "GPU accelerated editor",
+    "markdown live preview",
     "markdown now",
   ],
   authors: [{ name: "therealechan", url: "https://0xechan.xyz" }],
