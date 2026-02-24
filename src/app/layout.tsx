@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 const siteUrl = "https://md.nowornever.work";
 const title = "Markdown Now — Native macOS Markdown Editor";
 const description =
-  "A fast, GPU-accelerated macOS markdown editor with live side-by-side preview, syntax highlighting, and rich text copy. Built with Rust and GPUI.";
+  "A fast, lightweight macOS markdown editor with live side-by-side preview, syntax highlighting, and rich text copy. Built with Rust and GPUI — just a 6 MB download.";
 
 export const metadata: Metadata = {
   title,

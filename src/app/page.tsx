@@ -37,7 +37,7 @@ const faqLd = {
       name: "What is Markdown Now?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Markdown Now is a native macOS markdown editor built with Rust and GPUI. It features GPU-accelerated rendering, live side-by-side preview, syntax highlighting, and rich text copy.",
+        text: "Markdown Now is a fast, lightweight, native macOS markdown editor built with Rust and GPUI. It features GPU-accelerated rendering, live side-by-side preview, syntax highlighting, rich text copy, and full file management — all in a 6 MB download.",
       },
     },
     {

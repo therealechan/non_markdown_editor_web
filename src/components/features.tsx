@@ -30,7 +30,7 @@ const features = [
   {
     icon: MonitorCheckIcon,
     title: "Native macOS",
-    desc: "GPU-accelerated via GPUI. No Electron, no web views.",
+    desc: "GPU-accelerated via GPUI. No Electron, no web views. Just a 6 MB download.",
   },
   {
     icon: CopyIcon,
@@ -45,7 +45,7 @@ const features = [
   {
     icon: FolderOpenIcon,
     title: "File Management",
-    desc: "Open, save, and Save As with Cmd+O, Cmd+S, and Cmd+Shift+S.",
+    desc: "New, open, save, and Save As with Cmd+N, Cmd+O, Cmd+S, and Cmd+Shift+S.",
   },
   {
     icon: MousePointerClickIcon,

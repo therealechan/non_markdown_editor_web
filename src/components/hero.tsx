@@ -27,7 +27,7 @@ export function Hero() {
         variants={fadeSlideIn}
       >
         <ZapIcon size={14} />
-        <span>GPU-accelerated · macOS only</span>
+        <span>GPU-accelerated · 6 MB · macOS only</span>
       </motion.div>
 
       <motion.h1
