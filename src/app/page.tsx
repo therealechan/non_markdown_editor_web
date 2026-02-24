@@ -75,7 +75,7 @@ export default function Home() {
         <Hero />
         <AppPreview />
         <Features />
-        <Pricing />
+        {/* <Pricing /> */}
       </main>
       <Footer />
     </div>
